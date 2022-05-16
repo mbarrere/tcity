@@ -41,7 +41,7 @@ Optional args:
 $> java -jar tcity.jar -f examples/smart-farming/farming1.json --bayesian --display
 ```
 ```
-== TCity-Prototype v0.52 ==
+== TCity-Prototype v0.64 ==
 == Started at 2022-05-16 12:33:21.811 ==
 Input file: examples/smart-farming/farming1.json
 => Loading problem specification... 
