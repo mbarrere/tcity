@@ -59,7 +59,7 @@ Writing Graph to DOT file
 #### CPAG display: 
 If Graphviz is properly installed and the T-CITY config file has the correct path to the `dot` tool (e.g. `tools.dot = /usr/local/bin/dot`), then you should see the following CPAG: 
 
-![Screenshot - simple example](https://github.com/mbarrere/tcity/blob/master/screenshots/farming2-bn.png)
+![Screenshot - simple example](https://github.com/mbarrere/tcity/blob/main/screenshots/farming2-bn.png)
 
 ---
 
