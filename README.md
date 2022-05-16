@@ -12,13 +12,15 @@
 
 ## Requirements
 * Java 8
-* Optional: Graphviz (to produce output graphs in PNG format), Python 3 (to enable second MaxSAT solver)
+* Optional: 
+  * Graphviz (`dot` command) is required to produce output graphs in PNG format 
+  * Python 3, PuLP, and Gurobi, to enable second MaxSAT solver
 
 ## Usage
 
 ```java -jar tcity.jar -f inputFile.json [optional args]```  
-This command executes the T-CITY tool with an input JSON file that describes the network under analysis.
-```
+This command executes the T-CITY tool with an input JSON file that describes the network under analysis. Optional arguments are as follows. 
+
 ```
 Optional args: 
  -b,--bayesian       Enable Bayesian risk analysis
@@ -29,7 +31,7 @@ Optional args:
  -t,--trace          Turn on trace mode
  -x,--display        Enable graph solution display
 ```
-```
+
 
 
 ## Execution examples
@@ -54,8 +56,8 @@ Writing Graph to DOT file
 == TCity-Prototype ended at 2022-05-16 12:33:24.366 ==
 ```
 
-##### CPAG display: 
-If Graphviz is properly installed (Linux, Mac), you should see the following CPAG: 
+#### CPAG display: 
+If Graphviz is properly installed and the T-CITY config file has the correct path to the `dot` tool (e.g. `tools.dot = /usr/local/bin/dot`), then you should see the following CPAG: 
 
 ![Screenshot - simple example](https://github.com/mbarrere/tcity/blob/master/screenshots/farming2-bn.png)
 
