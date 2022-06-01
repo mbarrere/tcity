@@ -2,7 +2,7 @@
 ## Cyber-Physical Attack Graph Analyser for Smart Cities
 
 ### Version 0.64.0
-### Note: the source code will be available soon
+### Note: this site is under construction. Further documentation, instructions, source code, and examples, will be available soon. 
 
 ## Contents
 - [Requirements](#requirements)
