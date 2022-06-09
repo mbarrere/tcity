@@ -1,0 +1,937 @@
+{
+  "graph" : {
+    "graphTitle" : "Cyber-physical attack graph",
+    "nodes" : [ {
+      "x" : 425,
+      "y" : 750,
+      "r" : 13,
+      "label" : "Disrupted service",
+      "id" : "target",
+      "value" : "none",
+      "type" : "impact",
+      "properties" : {
+        "bValue" : "0.6205"
+      },
+      "colorConfig" : {
+        "lineColor" : "#6ae366",
+        "fillColor" : "#dfffdb",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 425,
+      "y" : 689,
+      "r" : 19,
+      "label" : "",
+      "id" : "or-target",
+      "value" : "none",
+      "type" : "or",
+      "properties" : {
+        "bValue" : "0.6205"
+      },
+      "colorConfig" : {
+        "lineColor" : "#b87aff",
+        "fillColor" : "#e8cfff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 241,
+      "y" : 666,
+      "r" : 13,
+      "label" : "Disrupted robot",
+      "id" : "dis-robot",
+      "value" : "none",
+      "type" : "impact",
+      "properties" : {
+        "bValue" : "0.4948"
+      },
+      "colorConfig" : {
+        "lineColor" : "#6ae366",
+        "fillColor" : "#dfffdb",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 632,
+      "y" : 668,
+      "r" : 13,
+      "label" : "Disrupted feeding system",
+      "id" : "dis-feedsys",
+      "value" : "none",
+      "type" : "impact",
+      "properties" : {
+        "bValue" : "0.4948"
+      },
+      "colorConfig" : {
+        "lineColor" : "#6ae366",
+        "fillColor" : "#dfffdb",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 633,
+      "y" : 616,
+      "r" : 19,
+      "label" : "",
+      "id" : "or-dis-feedsys",
+      "value" : "none",
+      "type" : "or",
+      "properties" : {
+        "bValue" : "0.4948"
+      },
+      "colorConfig" : {
+        "lineColor" : "#b87aff",
+        "fillColor" : "#e8cfff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 241,
+      "y" : 614,
+      "r" : 19,
+      "label" : "",
+      "id" : "or-dis-robot",
+      "value" : "none",
+      "type" : "or",
+      "properties" : {
+        "bValue" : "0.4948"
+      },
+      "colorConfig" : {
+        "lineColor" : "#b87aff",
+        "fillColor" : "#e8cfff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 112,
+      "y" : 509,
+      "r" : 13,
+      "label" : "root@robot",
+      "id" : "root-robot",
+      "value" : "none",
+      "type" : "cyber",
+      "properties" : {
+        "bValue" : "0.5509"
+      },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 496,
+      "y" : 521,
+      "r" : 13,
+      "label" : "root@feedsys",
+      "id" : "root-feedsys",
+      "value" : "none",
+      "type" : "cyber",
+      "properties" : {
+        "bValue" : "0.5509"
+      },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 181,
+      "y" : 455,
+      "r" : 19,
+      "label" : "",
+      "id" : "or-root-robot",
+      "value" : "none",
+      "type" : "or",
+      "properties" : {
+        "bValue" : "0.5509"
+      },
+      "colorConfig" : {
+        "lineColor" : "#b87aff",
+        "fillColor" : "#e8cfff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 606,
+      "y" : 474,
+      "r" : 19,
+      "label" : "",
+      "id" : "or-root-feedsys",
+      "value" : "none",
+      "type" : "or",
+      "properties" : {
+        "bValue" : "0.5509"
+      },
+      "colorConfig" : {
+        "lineColor" : "#b87aff",
+        "fillColor" : "#e8cfff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 409,
+      "y" : 338,
+      "r" : 13,
+      "label" : "root@pos-server",
+      "id" : "root-pos-server",
+      "value" : "none",
+      "type" : "cyber",
+      "properties" : {
+        "bValue" : "0.2700"
+      },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 559,
+      "y" : 266,
+      "r" : 13,
+      "label" : "root@webserver",
+      "id" : "root-webserver",
+      "value" : "none",
+      "type" : "cyber",
+      "properties" : {
+        "bValue" : "0.4500"
+      },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 510,
+      "y" : 141,
+      "r" : 13,
+      "label" : "user@webserver",
+      "id" : "user-webserver",
+      "value" : "none",
+      "type" : "cyber",
+      "properties" : {
+        "bValue" : "0.9000"
+      },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 88,
+      "y" : 304,
+      "r" : 13,
+      "label" : "root@control-pc",
+      "id" : "root-control-pc",
+      "value" : "none",
+      "type" : "cyber",
+      "properties" : {
+        "bValue" : "0.5190"
+      },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 91,
+      "y" : 235,
+      "r" : 19,
+      "label" : "",
+      "id" : "or-root-control-pc",
+      "value" : "none",
+      "type" : "or",
+      "properties" : {
+        "bValue" : "0.5190"
+      },
+      "colorConfig" : {
+        "lineColor" : "#b87aff",
+        "fillColor" : "#e8cfff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 326,
+      "y" : 145,
+      "r" : 13,
+      "label" : "root@fw1",
+      "id" : "root-fw1",
+      "value" : "none",
+      "type" : "cyber",
+      "properties" : {
+        "bValue" : "0.4000"
+      },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 406,
+      "y" : 273,
+      "r" : 13,
+      "label" : "root@fw2",
+      "id" : "root-fw2",
+      "value" : "none",
+      "type" : "cyber",
+      "properties" : {
+        "bValue" : "0.1600"
+      },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 702,
+      "y" : 128,
+      "r" : 13,
+      "label" : "Internal area",
+      "id" : "internal-area",
+      "value" : "none",
+      "type" : "physical",
+      "properties" : {
+        "bValue" : "0.7000"
+      },
+      "colorConfig" : {
+        "lineColor" : "#ffe959",
+        "fillColor" : "#fcf2b1",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 728,
+      "y" : 323,
+      "r" : 13,
+      "label" : "Inside site building",
+      "id" : "inside-building",
+      "value" : "none",
+      "type" : "physical",
+      "properties" : {
+        "bValue" : "0.2100"
+      },
+      "colorConfig" : {
+        "lineColor" : "#ffe959",
+        "fillColor" : "#fcf2b1",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 405,
+      "y" : 0,
+      "r" : 13,
+      "label" : "attacker",
+      "id" : "attacker",
+      "value" : "none",
+      "type" : "init",
+      "properties" : {
+        "bValue" : "1.0000"
+      },
+      "colorConfig" : {
+        "lineColor" : "#f5684c",
+        "fillColor" : "#FFD6C2",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 318,
+      "y" : 560,
+      "r" : 10,
+      "label" : "Manual robot disruption",
+      "id" : "ac-dis-robot",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.2100"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 702,
+      "y" : 541,
+      "r" : 10,
+      "label" : "Manual feeding disruption",
+      "id" : "ac-dis-feedsys",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.2100"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 112,
+      "y" : 597,
+      "r" : 10,
+      "label" : "Cyber comms",
+      "id" : "ac-comms-robot",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.5509"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 496,
+      "y" : 608,
+      "r" : 10,
+      "label" : "Cyber comms",
+      "id" : "ac-comms-feedsys",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.5509"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 322,
+      "y" : 488,
+      "r" : 17,
+      "label" : "VULN-2008-0410 \n(Weak credentials)",
+      "id" : "ac-building-robot",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.2100"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 688,
+      "y" : 402,
+      "r" : 17,
+      "label" : "VULN-2008-0410 \n(Weak credentials)",
+      "id" : "ac-building-feedsys",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.2100"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 304,
+      "y" : 383,
+      "r" : 17,
+      "label" : "VULN-2008-0410 \n(Weak credentials)",
+      "id" : "ac-pos-server-robot",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.2700"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 542,
+      "y" : 383,
+      "r" : 17,
+      "label" : "VULN-2008-0410 \n(Weak credentials)",
+      "id" : "ac-pos-server-feedsys",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.2700"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 205,
+      "y" : 147,
+      "r" : 17,
+      "label" : "VULN-2019-1015 \n(SSH buffer overflow)",
+      "id" : "ac-fw1-exp-control-pc",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.4000"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 279,
+      "y" : 283,
+      "r" : 17,
+      "label" : "VULN-2019-1015 \n(SSH buffer overflow)",
+      "id" : "ac-fw2-exp-control-pc",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.1600"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 148,
+      "y" : 55,
+      "r" : 17,
+      "label" : "VULN-2019-1015 \n(SSH buffer overflow)",
+      "id" : "ac-attacker-exp-control-pc",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "1.0000"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 194,
+      "y" : 355,
+      "r" : 17,
+      "label" : "Trusted channel \n(SSH)",
+      "id" : "ac-ssh-control-pc-robot",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.5190"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 86,
+      "y" : 401,
+      "r" : 17,
+      "label" : "Trusted channel \n(SSH)",
+      "id" : "ac-ssh-control-pc-feedsys",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.5190"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 559,
+      "y" : 326,
+      "r" : 17,
+      "label" : "Trusted channel \n(SSH)",
+      "id" : "ac-ssh-webserver-pos-server",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.4500"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 601,
+      "y" : 200,
+      "r" : 17,
+      "label" : "VULN-2017-6074 \n(Privilege escalation)",
+      "id" : "ac-escalation-root-webserver",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.9000"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 518,
+      "y" : 72,
+      "r" : 17,
+      "label" : "VULN-2015-0101 \n(PHP command injection)",
+      "id" : "ac-injection-user-webserver",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "1.0000"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 673,
+      "y" : 52,
+      "r" : 10,
+      "label" : "Bypass field site fence",
+      "id" : "ac-bypass-fence",
+      "value" : "none",
+      "type" : "physical-action",
+      "properties" : {
+        "bValue" : "1.0000"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 728,
+      "y" : 231,
+      "r" : 10,
+      "label" : "Biometric control exploit",
+      "id" : "ac-biometric-exploit",
+      "value" : "none",
+      "type" : "physical-action",
+      "properties" : {
+        "bValue" : "0.7000"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 328,
+      "y" : 77,
+      "r" : 17,
+      "label" : "VULN-2019-1015 \n(SSH buffer overflow)",
+      "id" : "ac-attacker-exp-fw1",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "1.0000"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 412,
+      "y" : 213,
+      "r" : 17,
+      "label" : "VULN-2019-1015 \n(SSH buffer overflow)",
+      "id" : "ac-fw1-exp-fw2",
+      "value" : "none",
+      "type" : "action",
+      "properties" : {
+        "bValue" : "0.4000"
+      },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    } ],
+    "edges" : [ {
+      "value" : "1.0",
+      "source" : "or-target",
+      "target" : "target",
+      "label" : "or-actuator",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "dis-robot",
+      "target" : "or-target",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "dis-feedsys",
+      "target" : "or-target",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "or-dis-robot",
+      "target" : "dis-robot",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "or-dis-feedsys",
+      "target" : "dis-feedsys",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.9",
+      "source" : "ac-dis-robot",
+      "target" : "or-dis-robot",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.8",
+      "source" : "ac-comms-robot",
+      "target" : "or-dis-robot",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.9",
+      "source" : "ac-dis-feedsys",
+      "target" : "or-dis-feedsys",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.8",
+      "source" : "ac-comms-feedsys",
+      "target" : "or-dis-feedsys",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "inside-building",
+      "target" : "ac-dis-robot",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "inside-building",
+      "target" : "ac-dis-feedsys",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "root-robot",
+      "target" : "ac-comms-robot",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "root-feedsys",
+      "target" : "ac-comms-feedsys",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "or-root-robot",
+      "target" : "root-robot",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "or-root-feedsys",
+      "target" : "root-feedsys",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "inside-building",
+      "target" : "ac-building-robot",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.8",
+      "source" : "ac-building-robot",
+      "target" : "or-root-robot",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "root-pos-server",
+      "target" : "ac-pos-server-robot",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.8",
+      "source" : "ac-pos-server-robot",
+      "target" : "or-root-robot",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "inside-building",
+      "target" : "ac-building-feedsys",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.8",
+      "source" : "ac-building-feedsys",
+      "target" : "or-root-feedsys",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "root-pos-server",
+      "target" : "ac-pos-server-feedsys",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.8",
+      "source" : "ac-pos-server-feedsys",
+      "target" : "or-root-feedsys",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "or-root-control-pc",
+      "target" : "root-control-pc",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "root-fw1",
+      "target" : "ac-fw1-exp-control-pc",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.4",
+      "source" : "ac-fw1-exp-control-pc",
+      "target" : "or-root-control-pc",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "root-fw2",
+      "target" : "ac-fw2-exp-control-pc",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.4",
+      "source" : "ac-fw2-exp-control-pc",
+      "target" : "or-root-control-pc",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "attacker",
+      "target" : "ac-attacker-exp-control-pc",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.4",
+      "source" : "ac-attacker-exp-control-pc",
+      "target" : "or-root-control-pc",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "root-control-pc",
+      "target" : "ac-ssh-control-pc-robot",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.6",
+      "source" : "ac-ssh-control-pc-robot",
+      "target" : "or-root-robot",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "root-control-pc",
+      "target" : "ac-ssh-control-pc-feedsys",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.6",
+      "source" : "ac-ssh-control-pc-feedsys",
+      "target" : "or-root-feedsys",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "root-webserver",
+      "target" : "ac-ssh-webserver-pos-server",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.6",
+      "source" : "ac-ssh-webserver-pos-server",
+      "target" : "root-pos-server",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "attacker",
+      "target" : "ac-injection-user-webserver",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.9",
+      "source" : "ac-injection-user-webserver",
+      "target" : "user-webserver",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "user-webserver",
+      "target" : "ac-escalation-root-webserver",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.5",
+      "source" : "ac-escalation-root-webserver",
+      "target" : "root-webserver",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "attacker",
+      "target" : "ac-bypass-fence",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.7",
+      "source" : "ac-bypass-fence",
+      "target" : "internal-area",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "internal-area",
+      "target" : "ac-biometric-exploit",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.3",
+      "source" : "ac-biometric-exploit",
+      "target" : "inside-building",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "attacker",
+      "target" : "ac-attacker-exp-fw1",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.4",
+      "source" : "ac-attacker-exp-fw1",
+      "target" : "root-fw1",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "root-fw1",
+      "target" : "ac-fw1-exp-fw2",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "0.4",
+      "source" : "ac-fw1-exp-fw2",
+      "target" : "root-fw2",
+      "label" : "",
+      "properties" : { }
+    } ],
+    "source" : "attacker",
+    "target" : "target"
+  }
+}

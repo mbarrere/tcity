@@ -1,0 +1,107 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>tcity</groupId>
+  <artifactId>tcity</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>T-CITY</name>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <properties>
+    <!-- TODO: set version -->
+    <jayes.version>2.5.5-SNAPSHOT</jayes.version>
+</properties>
+<repositories>
+    <repository>
+        <id>recommenders</id>
+        <url>https://repo.eclipse.org/content/repositories/recommenders/</url>
+    </repository>
+</repositories>
+
+  <dependencies>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.14.0</version>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.14.0</version>
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
+	<dependency>
+	    <groupId>commons-cli</groupId>
+	    <artifactId>commons-cli</artifactId>
+	    <version>1.4</version>
+	</dependency>
+  <dependency>
+        <groupId>org.eclipse.recommenders</groupId>
+        <artifactId>org.eclipse.recommenders.jayes</artifactId>
+        <version>${jayes.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.recommenders</groupId>
+        <artifactId>org.eclipse.recommenders.jayes.io</artifactId>
+        <version>${jayes.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.recommenders</groupId>
+        <artifactId>org.eclipse.recommenders.jayes.transformation</artifactId>
+        <version>${jayes.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>15.0</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.0.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-math</artifactId>
+        <version>2.1</version>
+    </dependency>
+    
+    <!-- Graph visualisation -->
+    <dependency>
+	    <groupId>org.graphstream</groupId>
+	    <artifactId>gs-core</artifactId>
+	    <version>2.0</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.graphstream</groupId>
+	    <artifactId>gs-algo</artifactId>
+	    <version>2.0</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.graphstream</groupId>
+	    <artifactId>gs-ui-swing</artifactId>
+	    <version>2.0</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.graphstream</groupId>
+	    <artifactId>gs-ui-javafx</artifactId>
+	    <version>2.0</version>
+	</dependency>
+</dependencies>
+</project>

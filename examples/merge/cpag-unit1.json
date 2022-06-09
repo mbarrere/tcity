@@ -1,0 +1,63 @@
+{
+  "graph" : {
+    "graphTitle" : "Cyber-physical attack graph",
+    "nodes" : [ {
+      "x" : 187,
+      "y" : 276,
+      "r" : 13,
+      "label" : "s1",
+      "id" : "1",
+      "value" : "1",
+      "type" : "cyber",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 374,
+      "y" : 276,
+      "r" : 10,
+      "label" : "a1",
+      "id" : "2",
+      "value" : "1",
+      "type" : "action",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 561,
+      "y" : 276,
+      "r" : 13,
+      "label" : "s4",
+      "id" : "3",
+      "value" : "1",
+      "type" : "cyber",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    } ],
+    "edges" : [ {
+      "value" : "1.0",
+      "source" : "1",
+      "target" : "2",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "2",
+      "target" : "3",
+      "label" : "",
+      "properties" : { }
+    } ],
+    "source" : null,
+    "target" : null
+  }
+}

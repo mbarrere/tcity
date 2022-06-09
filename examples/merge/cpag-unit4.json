@@ -1,0 +1,103 @@
+{
+  "graph" : {
+    "graphTitle" : "Cyber-physical attack graph",
+    "nodes" : [ {
+      "x" : 149,
+      "y" : 184,
+      "r" : 13,
+      "label" : "s4",
+      "id" : "12",
+      "value" : "1",
+      "type" : "cyber",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 149,
+      "y" : 368,
+      "r" : 13,
+      "label" : "s5",
+      "id" : "13",
+      "value" : "1",
+      "type" : "cyber",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 298,
+      "y" : 276,
+      "r" : 19,
+      "label" : "OR",
+      "id" : "14",
+      "value" : "",
+      "type" : "OR",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#b87aff",
+        "fillColor" : "#e8cfff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 447,
+      "y" : 276,
+      "r" : 10,
+      "label" : "a4",
+      "id" : "15",
+      "value" : "1",
+      "type" : "action",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 596,
+      "y" : 276,
+      "r" : 13,
+      "label" : "t",
+      "id" : "16",
+      "value" : "1",
+      "type" : "cyber",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    } ],
+    "edges" : [ {
+      "value" : "1.0",
+      "source" : "12",
+      "target" : "14",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "13",
+      "target" : "14",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "14",
+      "target" : "15",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "15",
+      "target" : "16",
+      "label" : "",
+      "properties" : { }
+    } ],
+    "source" : null,
+    "target" : null
+  }
+}

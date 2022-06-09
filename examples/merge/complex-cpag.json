@@ -1,0 +1,289 @@
+{
+  "graph" : {
+    "graphTitle" : "Cyber-physical attack graph",
+    "nodes" : [ {
+      "x" : 83,
+      "y" : 138,
+      "r" : 13,
+      "label" : "s1",
+      "id" : "1",
+      "value" : "1",
+      "type" : "cyber",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 166,
+      "y" : 138,
+      "r" : 10,
+      "label" : "a1",
+      "id" : "2",
+      "value" : "1",
+      "type" : "action",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 415,
+      "y" : 184,
+      "r" : 13,
+      "label" : "s4",
+      "id" : "3",
+      "value" : "1",
+      "type" : "cyber",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 83,
+      "y" : 276,
+      "r" : 13,
+      "label" : "s2",
+      "id" : "4",
+      "value" : "1",
+      "type" : "cyber",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 166,
+      "y" : 276,
+      "r" : 10,
+      "label" : "a2",
+      "id" : "5",
+      "value" : "1",
+      "type" : "action",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 415,
+      "y" : 368,
+      "r" : 13,
+      "label" : "s5",
+      "id" : "7",
+      "value" : "1",
+      "type" : "cyber",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 332,
+      "y" : 276,
+      "r" : 13,
+      "label" : "SP",
+      "id" : "8",
+      "value" : "",
+      "type" : "SP",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#b87aff",
+        "fillColor" : "#e8cfff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 249,
+      "y" : 184,
+      "r" : 19,
+      "label" : "or",
+      "id" : "64",
+      "value" : "none",
+      "type" : "or",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#b87aff",
+        "fillColor" : "#e8cfff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 83,
+      "y" : 414,
+      "r" : 13,
+      "label" : "s3",
+      "id" : "9",
+      "value" : "1",
+      "type" : "cyber",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 166,
+      "y" : 414,
+      "r" : 10,
+      "label" : "a3",
+      "id" : "10",
+      "value" : "1",
+      "type" : "action",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 249,
+      "y" : 368,
+      "r" : 19,
+      "label" : "or",
+      "id" : "76",
+      "value" : "none",
+      "type" : "or",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#b87aff",
+        "fillColor" : "#e8cfff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 498,
+      "y" : 276,
+      "r" : 19,
+      "label" : "OR",
+      "id" : "14",
+      "value" : "",
+      "type" : "OR",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#b87aff",
+        "fillColor" : "#e8cfff",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 581,
+      "y" : 276,
+      "r" : 10,
+      "label" : "a4",
+      "id" : "15",
+      "value" : "1",
+      "type" : "action",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#808080",
+        "fillColor" : "#FFFFFF",
+        "textColor" : "#000000"
+      }
+    }, {
+      "x" : 664,
+      "y" : 276,
+      "r" : 13,
+      "label" : "t",
+      "id" : "16",
+      "value" : "1",
+      "type" : "cyber",
+      "properties" : { },
+      "colorConfig" : {
+        "lineColor" : "#75aed1",
+        "fillColor" : "#c4e9ff",
+        "textColor" : "#000000"
+      }
+    } ],
+    "edges" : [ {
+      "value" : "1.0",
+      "source" : "1",
+      "target" : "2",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "4",
+      "target" : "5",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "5",
+      "target" : "8",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "2",
+      "target" : "64",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "8",
+      "target" : "64",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1",
+      "source" : "64",
+      "target" : "3",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "9",
+      "target" : "10",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "8",
+      "target" : "76",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "10",
+      "target" : "76",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1",
+      "source" : "76",
+      "target" : "7",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "3",
+      "target" : "14",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "7",
+      "target" : "14",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "14",
+      "target" : "15",
+      "label" : "",
+      "properties" : { }
+    }, {
+      "value" : "1.0",
+      "source" : "15",
+      "target" : "16",
+      "label" : "",
+      "properties" : { }
+    } ],
+    "source" : null,
+    "target" : null
+  }
+}

@@ -27,10 +27,12 @@ hs_err_pid*
 .DS_Store
 
 # Local testing
+autosave-tcity.bin
 /src/uk/ac/imperial/isst/tcity/lab/
 old/
 others/
 plots/
+dist/
 
 # Maven
 target/

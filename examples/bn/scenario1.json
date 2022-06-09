@@ -1,0 +1,187 @@
+{
+    "graph": {
+
+        "source":"attacker",
+	      "target":"t",
+
+        "nodes": [
+            {
+                "id": "t",
+                "type": "actuator",
+                "label": "Disrupted-service",
+                "value": "inf"
+            },
+	           {
+                "id": "or-t",
+                "type": "or",
+                "label": "or-t",
+                "value": "none"
+            },
+	          {
+                "id": "rtu-up",
+                "type": "RTU",
+                "label": "RTU-updated",
+                "value": "inf"
+            },
+            {
+               "id": "or-rtu-up",
+               "type": "or",
+               "label": "or-rtu-up",
+               "value": "none"
+           },
+            {
+                "id": "rtu-off",
+                "type": "RTU",
+                "label": "RTU-offline",
+                "value": "inf"
+            },
+            {
+               "id": "or-rtu-off",
+               "type": "or",
+               "label": "or-rtu-off",
+               "value": "none"
+           },
+	          {
+                "id": "sens-off",
+                "type": "sensor",
+                "label": "Sensor-offline",
+                "value": "inf"
+            },
+            {
+                "id": "scada-server",
+                "type": "server",
+                "label": "SCADA-server",
+                "value": "inf"
+            },
+            {
+                "id": "operator-machine",
+                "type": "host",
+                "label": "Operator-machine",
+                "value": "inf"
+            },
+            {
+                "id": "data-exporter",
+                "type": "host",
+                "label": "Data-exporter",
+                "value": "inf"
+            },
+            {
+                "id": "inside-building",
+                "type": "physical-state",
+                "label": "Inside-building",
+                "value": "inf"
+            },
+            {
+                "id": "internal-area",
+                "type": "physical-state",
+                "label": "Internal-area",
+                "value": "inf"
+            },
+	           {
+                "id": "attacker",
+                "type": "init",
+                "label": "Attacker",
+                "value": "inf"
+            }
+        ],
+
+        "edges": [
+	          {
+                "source": "or-t",
+                "target": "t",
+                "label": "",
+		            "value":"1"
+            },
+	          {
+                "source": "rtu-up",
+                "target": "or-t",
+                "label": "Direct-consequence",
+		            "value":"1"
+            },
+	          {
+                "source": "rtu-off",
+                "target": "or-t",
+                "label": "Direct-consequence",
+		            "value":"1"
+            },
+            {
+                "source": "sens-off",
+                "target": "or-t",
+                "label": "Direct-consequence",
+		            "value":"1"
+            },
+            {
+                "source": "or-rtu-up",
+                "target": "rtu-up",
+                "label": "",
+		            "value":"1"
+            },
+            {
+                "source": "or-rtu-off",
+                "target": "rtu-off",
+                "label": "",
+		            "value":"1"
+            },
+	          {
+                "source": "scada-server",
+                "target": "or-rtu-up",
+                "label": "Ladder-logic-update",
+		             "value":"0.7"
+            },
+            {
+                "source": "inside-building",
+                "target": "or-rtu-up",
+                "label": "Manual-override",
+		             "value":"0.3"
+            },
+            {
+                "source": "operator-machine",
+                "target": "or-rtu-off",
+                "label": "Remote-shutdown",
+                "value":"0.8"
+            },
+            {
+                "source": "inside-building",
+                "target": "or-rtu-off",
+                "label": "Manual-disconnection",
+                 "value":"0.9"
+            },
+            {
+                "source": "inside-building",
+                "target": "sens-off",
+                "label": "Physical-disruption",
+                 "value":"0.8"
+            },
+            {
+                "source": "data-exporter",
+                "target": "scada-server",
+                "label": "CVE-2020-31",
+                 "value":"0.4"
+            },
+            {
+                "source": "data-exporter",
+                "target": "operator-machine",
+                "label": "CVE-2017-52",
+                 "value":"0.6"
+            },
+            {
+                "source": "attacker",
+                "target": "data-exporter",
+                "label": "CVE-2010-12",
+                "value":"0.8"
+            },
+            {
+                "source": "internal-area",
+                "target": "inside-building",
+                "label": "Biometric-exploit",
+                "value":"0.1"
+            },
+            {
+                "source": "attacker",
+                "target": "internal-area",
+                "label": "Bypass-fence",
+                "value":"0.3"
+            }
+        ]
+    }
+}

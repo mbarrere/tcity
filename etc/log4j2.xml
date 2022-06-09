@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <Configuration monitorInterval="5" status="WARN"> -->
+<!-- on the VM args: -Dlog4j.configuration="/Users/mbarrere/workspace/naggen-core/etc/log4j2.xml" -->
+<Configuration status="WARN">
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <!-- <PatternLayout pattern="%m%n"/> -->
+            <!-- <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" /> -->
+            <PatternLayout pattern="%d{HH:mm:ss} [%-5p] %c{1}:%L - %msg%n" />
+            <!--  <PatternLayout pattern="%d{HH:mm:ss} [%-5p] %msg%n" /> -->
+        </Console>
+
+        <RollingFile name="RollingFile" filename="tcity.log" filepattern="${logPath}/%d{yyyyMMddHHmmss}-tcity.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" />
+            <!--<PatternLayout pattern="%d{DATE} [%-5p] %-30.30c{2} %-20.20M (%-5.10t)> %m%n" /> -->
+            <!-- <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern>
+            </PatternLayout>
+            -->
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="20" />
+        </RollingFile>
+
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <!-- Important: specific logging levels, "lower" than the root level, do not work -->
+            <AppenderRef ref="Console" level="INFO"/>
+            <!--  <AppenderRef ref="RollingFile" level="WARN"/>  -->
+        </Root>
+    </Loggers>
+</Configuration>
