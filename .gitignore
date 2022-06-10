@@ -28,6 +28,7 @@ hs_err_pid*
 
 # Local testing
 autosave-tcity.bin
+#*.dot
 /src/uk/ac/imperial/isst/tcity/lab/
 old/
 others/
