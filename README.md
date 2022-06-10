@@ -65,7 +65,7 @@ Repeat the merging process with CPAG unit 4 (at `examples/merge/cpag-unit4.json`
 After merging the four CPAG units, you should see the following complex CPAG: 
 ![Screenshot - Complex CPAG](https://github.com/mbarrere/tcity/blob/main/screenshots/complex-cpag.png)
 
----
+#
 
 ### Risk analysis with Bayesian CPAGs (graphical interface)
 ```
@@ -77,7 +77,7 @@ $> java -jar tcity.jar -g
 
 ![Screenshot - T-CITY editor - Smart farming scenario](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-editor-farming.png)
 
----
+#
 
 ### Risk analysis with Bayesian CPAGs (command line)
 ```
