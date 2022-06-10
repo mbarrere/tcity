@@ -50,23 +50,23 @@ Designing attack graphs for complex scenarios can be a very challenging task. T-
 - You should see the following CPAG unit: 
 
 <!-- ![Screenshot - CPAG unit1](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit1.png) -->
-<img src="https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit1.png" alt="Screenshot - CPAG unit1" width="80%">
+<p align="center"> <img src="https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit1.png" alt="Screenshot - CPAG unit1" width="80%"> </p>
 
 Now go to Menu -> `Operations` -> `Merge CPAGs` and open the second CPAG unit at `examples/merge/cpag-unit2.json`. The following CPAG unit will be merged with the current CPAG: 
 <!-- ![Screenshot - CPAG unit2](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit2.png) -->
-<img src="https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit2.png" alt="Screenshot - CPAG unit2" width="80%">
+<p align="center"> <img src="https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit2.png" alt="Screenshot - CPAG unit2" width="80%"> </p>
 
 Repeat the merging process with CPAG unit 3 (at `examples/merge/cpag-unit3.json`)
 <!-- ![Screenshot - CPAG unit3](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit3.png) -->
-<img src="https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit3.png" alt="Screenshot - CPAG unit3" width="80%">
+<p align="center"> <img src="https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit3.png" alt="Screenshot - CPAG unit3" width="80%"> </p>
 
 Repeat the merging process with CPAG unit 4 (at `examples/merge/cpag-unit4.json`)
 <!-- ![Screenshot - CPAG unit4](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit4.png) -->
-<img src="https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit4.png" alt="Screenshot - CPAG unit4" width="80%">
+<p align="center"> <img src="https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit4.png" alt="Screenshot - CPAG unit4" width="80%"> </p>
 
 After merging the four CPAG units, you should see the following complex CPAG: 
 <!-- ![Screenshot - Complex CPAG](https://github.com/mbarrere/tcity/blob/main/screenshots/complex-cpag.png) -->
-<img src="https://github.com/mbarrere/tcity/blob/main/screenshots/complex-cpag.png" alt="Screenshot - Complex CPAG" width="80%">
+<p align="center"> <img src="https://github.com/mbarrere/tcity/blob/main/screenshots/complex-cpag.png" alt="Screenshot - Complex CPAG" width="80%"> </p>
 
 #
 
@@ -79,7 +79,7 @@ $> java -jar tcity.jar -g
 - You should see the following Bayesian CPAG:
 
 <!-- ![Screenshot - T-CITY editor - Smart farming scenario](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-editor-farming.png) -->
-<img src="https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-editor-farming.png" alt="Screenshot - T-CITY editor - Smart farming scenario" width="100%">
+<p align="center"> <img src="https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-editor-farming.png" alt="Screenshot - T-CITY editor - Smart farming scenario" width="100%"> </p>
 
 #
 
@@ -107,7 +107,7 @@ $> java -jar tcity.jar -f examples/smart-farming/farming.json --bayesian --displ
 If Graphviz is properly installed and the T-CITY config file has the correct path to the `dot` tool (e.g. `tools.dot = /usr/local/bin/dot`), then you should see the following CPAG: 
 
 <!-- ![Screenshot - Smart farming scenario with Graphviz](https://github.com/mbarrere/tcity/blob/main/screenshots/farming2-bn.png) -->
-<img src="https://github.com/mbarrere/tcity/blob/main/screenshots/farming2-bn.png" alt="Screenshot - Smart farming scenario with Graphviz" width="100%">
+<p align="center"> <img src="https://github.com/mbarrere/tcity/blob/main/screenshots/farming2-bn.png" alt="Screenshot - Smart farming scenario with Graphviz" width="100%"> </p>
 
 
 ---
