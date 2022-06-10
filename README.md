@@ -2,7 +2,7 @@
 ## Cyber-Physical Attack Graph Analyser for Smart Cities
 
 ### Version 0.64.0
-### Note: this site is under construction. Further documentation, instructions, source code, and examples, will be available soon. 
+### Note: this site is under construction. Further documentation, instructions, and examples, will be available soon. 
 
 ## Contents
 - [Requirements](#requirements)
@@ -19,6 +19,11 @@
 
 ## Usage
 
+### Graphical front end
+```java -jar tcity.jar -g```  
+This command executes the T-CITY tool in graphical mode. 
+
+### Command line
 ```java -jar tcity.jar -f inputFile.json [optional args]```  
 This command executes the T-CITY tool with an input JSON file that describes the network under analysis. Optional arguments are as follows. 
 
@@ -28,6 +33,7 @@ Optional args:
  -c,--config <arg>   Load custom configuration file
  -d,--debug          Turn on debug mode
  -f,--file <arg>     (Mandatory) Input JSON file
+ -g,--gui            Enable graphical CPAG editor and analyser
  -h,--hardening      Enable hardening analysis
  -t,--trace          Turn on trace mode
  -x,--display        Enable graph solution display
