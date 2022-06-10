@@ -43,6 +43,30 @@ Optional args:
 
 ## Execution examples
 
+### CPAG design and composition
+Designing attack graphs for complex scenarios can be a very challenging task. T-CITY aims at assisting CPAG designers to build manageable CPAG units and combine them to produce more complex CPAGs. Here we present an example with four CPAG units and its final composition. 
+
+- Open the T-CITY graphical interface: `$> java -jar tcity.jar -g`
+- Go to Menu -> `File` -> `Open CPAG (JSON)` and navigate to the first CPAG unit at `examples/merge/cpag-unit1.json`
+- You should see the following CPAG unit: 
+
+![Screenshot - CPAG unit1](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit1.png)
+
+Now go to Menu -> `Operations` -> `Merge CPAGs` and open the second CPAG unit at `examples/merge/cpag-unit2.json`. The following CPAG unit will be merged with the current CPAG: 
+![Screenshot - CPAG unit2](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit2.png)
+
+Repeat the merging process with CPAG unit 3 (at `examples/merge/cpag-unit3.json`)
+![Screenshot - CPAG unit3](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit3.png)
+
+Repeat the merging process with CPAG unit 4 (at `examples/merge/cpag-unit4.json`)
+![Screenshot - CPAG unit4](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-unit4.png)
+
+
+After merging the four CPAG units, you should see the following complex CPAG: 
+![Screenshot - Complex CPAG](https://github.com/mbarrere/tcity/blob/main/screenshots/complex-cpag.png)
+
+---
+
 ### Risk analysis with Bayesian CPAGs (graphical interface)
 ```
 $> java -jar tcity.jar -g
@@ -51,7 +75,9 @@ $> java -jar tcity.jar -g
 - Go to Menu -> `CPAG Metrics` -> `Auto Bayesian risk`
 - You should see the following Bayesian CPAG:
 
-![Screenshot - simple example](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-editor-farming.png)
+![Screenshot - T-CITY editor - Smart farming scenario](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-editor-farming.png)
+
+---
 
 ### Risk analysis with Bayesian CPAGs (command line)
 ```
@@ -76,7 +102,7 @@ $> java -jar tcity.jar -f examples/smart-farming/farming.json --bayesian --displ
 #### CPAG display: 
 If Graphviz is properly installed and the T-CITY config file has the correct path to the `dot` tool (e.g. `tools.dot = /usr/local/bin/dot`), then you should see the following CPAG: 
 
-![Screenshot - simple example](https://github.com/mbarrere/tcity/blob/main/screenshots/farming2-bn.png)
+![Screenshot - Smart farming scenario with Graphviz](https://github.com/mbarrere/tcity/blob/main/screenshots/farming2-bn.png)
 
 ---
 
