@@ -7,6 +7,7 @@
 - [About T-CITY](#about-t-city)
 - [Requirements](#requirements)
 - [Usage](#usage)
+- [CPAG main concepts](#cpag-main-concepts)
 - [Execution examples](#execution-examples)
 - [Configuration parameters](#configuration-parameters)
 - [Licence](#licence)
@@ -43,6 +44,25 @@ Optional args:
  -x,--display        Enable graph solution display
 ```
 
+## CPAG main concepts
+
+The base building block of a CPAG is called a CPAG unit and is composed of three main parts: `Precondition(s)` -> `Attack` -> `Postcondition(s)`. 
+The main idea is that the execution of an atomic attack requires a number of preconditions to be fulfilled by the attacker (e.g. possessing certain security privileges in the target network). If the attack is successful, then the attacker gains one or more new security privileges (postconditions) that can be used as preconditions for further attacks, hence the possibility of conducting multi-stage attacks. 
+
+A CPAG unit is in itself a CPAG. CPAG units can be combined to produce more complex CPAGs. 
+In practice, some attacks may require complex combinations of preconditions to be properly executed. CPAGs can express these combainations in the form of  precondition trees that are logically combined and connected to attack actions. 
+
+There are mainly three types of nodes: security privileges, actions, and logical operators. 
+* **Security privileges** are represented as ellipses and include cyber privileges, physical privileges, impact nodes, and custom privileges. 
+* **Action nodes** (attacks) are represented as rectangles. 
+* **Logical operators** include AND and OR gates (rhomboidal shape), and a splitter gate (octagonal shape) that captures multiple postconditions from a single attack action. 
+
+<!-- CPAGs follow a classical requires/provides model for computer attacks in the form of `Precondition(s)` -> `Attack` -> `Postcondition(s)`. -->
+Nodes are connected with directed edges that represent the transition between security privilegs and attack actions. 
+The T-CITY graphical editor allows designers to easily create graphs using the right mouse button although it can also import existing CPAGs in JSON format. 
+CPAG nodes and edges can also have associated values that can be used for further analysis, e.g. Bayesian CPAGs for risk analysis (described later), costs for network hardening (currently under development), among others. 
+
+
 
 
 ## Execution examples
@@ -76,9 +96,9 @@ After merging the four CPAG units, you should see the following complex CPAG:
 #
 
 ### Risk analysis with Bayesian CPAGs (graphical interface)
-```
-$> java -jar tcity.jar -g
-```
+Bayesian CPAGs are CPAGs whose edges have associated conditional probabilities. T-CITY can automatically compute the marginal probabilities of the security privileges, which are understood as the risk (or likelihood) of an attacker reaching specific assets in the network. The following example involves a simplified CPAG designed to analyse cyber-physical attacks in a smart farming context. 
+
+- Open the T-CITY graphical interface: `$> java -jar tcity.jar -g`
 - Go to Menu -> `File` -> `Open CPAG (JSON)` and navigate to the smart farming scenario at `examples/smart-farming/farming.json`
 - Go to Menu -> `CPAG Metrics` -> `Auto Bayesian risk`
 - You should see the following Bayesian CPAG:
