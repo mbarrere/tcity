@@ -1,8 +1,7 @@
 # T-CITY
-## Cyber-Physical Attack Graph Analyser for Smart Cities
+## Cyber-Physical Attack Graph (CPAG) Analyser for Smart Cities
 
 ### Version 0.64.0
-### Note: this site is under construction. Further documentation, instructions, and examples, will be available soon. 
 
 ## Contents
 - [Requirements](#requirements)
