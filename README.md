@@ -43,24 +43,34 @@ Optional args:
 
 ## Execution examples
 
-### Example 1: Risk analysis with Bayesian CPAGs
+### Risk analysis with Bayesian CPAGs (graphical interface)
 ```
-$> java -jar tcity.jar -f examples/smart-farming/farming1.json --bayesian --display
+$> java -jar tcity.jar -g
+```
+- Go to Menu -> `File` -> `Open CPAG (JSON)` and navigate to the smart farming scenario at `examples/smart-farming/farming.json`
+- Go to Menu -> `CPAG Metrics` -> `Auto Bayesian risk`
+- You should see the following Bayesian CPAG:
+
+![Screenshot - simple example](https://github.com/mbarrere/tcity/blob/main/screenshots/cpag-editor-farming.png)
+
+### Risk analysis with Bayesian CPAGs (command line)
+```
+$> java -jar tcity.jar -f examples/smart-farming/farming.json --bayesian --display
 ```
 ```
-== TCity-Prototype v0.64 ==
-== Started at 2022-05-16 12:33:21.811 ==
-Input file: examples/smart-farming/farming1.json
-=> Loading problem specification... 
-done in 170 ms (0 seconds).
-(*) Hardening analysis not enabled (enable with flag -h)
-(*) Bayesian enabled
-Bayesian. Computing inconditional probabilities for graph G(V=40,E=48)
-Bayes => sourceNode: attacker, targetNode: target
-[TIME] Bayesian generation took 39 ms (0 seconds)
-Unconditional probability for target 'target': 0.61996373508379
-Writing Graph to DOT file
-== TCity-Prototype ended at 2022-05-16 12:33:24.366 ==
+11:46:47 [INFO ] TCity:51 - == T-CITY v0.64 ==
+11:46:47 [INFO ] TCity:52 - == Started at 2022-06-10 11:46:47.497 ==
+11:46:47 [INFO ] TCity:118 - Input file: examples/smart-farming/farming.json
+11:46:47 [INFO ] TCity:120 - => Loading problem specification... 
+11:46:47 [INFO ] TCity:124 -  done in 139 ms (0 seconds).
+11:46:47 [INFO ] TCity:145 - (*) Hardening analysis not enabled (enable with flag -h)
+11:46:47 [INFO ] TCity:150 - (*) Bayesian enabled
+11:46:47 [INFO ] BayesianTransformer:245 - Bayesian. Computing inconditional probabilities for graph G(V=40,E=48)
+11:46:47 [INFO ] BayesianTransformer:261 - Bayes => sourceNode: attacker, targetNode: target
+11:46:47 [INFO ] BayesianTransformer:348 - [TIME] Bayesian generation took 36 ms (0 seconds)
+11:46:47 [INFO ] RiskAnalysis:48 - Unconditional probability for target 'target': 0.62050078537184
+11:46:47 [INFO ] BayesianAndOrGraphExporter:222 - Writing Graph to DOT file
+11:46:49 [INFO ] TCity:160 - == T-CITY ended at 2022-06-10 11:46:49.147 ==
 ```
 
 #### CPAG display: 
