@@ -9,7 +9,7 @@
                 "id": "t",
                 "type": "actuator",
                 "label": "Disrupted-service",
-                "value": "inf"
+                "value": "inf" 
             },
 	           {
                 "id": "or-t",

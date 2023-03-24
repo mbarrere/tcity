@@ -17,7 +17,7 @@ T-CITY stands for **T**rustworthy **C**ritical **I**nfras**T**ructure S**Y**stem
 is to assist security practitioners in the design and analysis of **Cyber-Physical Attack Graphs (CPAGs)**. A cyber-physical attack graph is a mathematical security tool aimed at modelling the different ways in which an attacker can compromise specific assets in a networked cyber-physical system. More specifically, a CPAG logically encodes the different attack paths that an attacker can follow by exploiting cyber and/or physical weaknesses and moving laterally across the network towards their target. The research work behind T-CITY focuses on the formal specification of individual CPAG units that can be subsequently combined to produce complex CPAG as well as techniques to analyse them. Overall, CPAGs aim at extending the reach of traditional attack graphs by providing a unified approach to analyse multi-stage cyber-physical attacks and their operational impact on smart cities and critical infrastructure systems.
 
 ## Requirements
-* Java 8
+* Java 8 or higher
 * Optional: 
   * Graphviz (`dot` command) is required to produce output graphs in PNG format 
   * Python 3, PuLP, and Gurobi, to enable second MaxSAT solver

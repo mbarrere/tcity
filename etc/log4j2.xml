@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- <Configuration monitorInterval="5" status="WARN"> -->
-<!-- on the VM args: -Dlog4j.configuration="/Users/mbarrere/workspace/naggen-core/etc/log4j2.xml" -->
 <Configuration status="WARN">
 
     <Appenders>

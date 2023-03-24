@@ -4,8 +4,6 @@
 # Modified by: Martin Barrere <m.barrere@imperial.ac.uk>
 
 import sys
-#sys.path.append("/Library/gurobi810/mac64/bin/")
-#print (sys.path)
 from pulp import *
 import pulp
 import math
@@ -22,7 +20,6 @@ import json
 #filename = 'simple.txt'
 #filename = 'input2/out-5000n--exec10-.txt'
 #filename = 'input1/out-10000n--exec1-.txt'
-#filename = '../output/2018.12.10/set10000-20000/out-10000n--exec1-.txt'
 
 def loadGraphData(filename):
     graph_dict = {}
