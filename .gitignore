@@ -27,6 +27,7 @@ hs_err_pid*
 .DS_Store
 
 # Local testing
+local/
 autosave-tcity.bin
 #*.dot
 /src/uk/ac/imperial/isst/tcity/lab/

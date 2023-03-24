@@ -13,6 +13,7 @@ public interface ConfigKeys {
 	public static final String analysisCriticality = "analysis.criticality";
 	public static final String analysisHardening = "analysis.hardening";
 	public static final String analysisBayesian = "analysis.bayesian";
+	public static final String analysisCentrality = "analysis.centrality";
 	
 
 	

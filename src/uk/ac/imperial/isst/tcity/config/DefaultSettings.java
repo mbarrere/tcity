@@ -33,6 +33,7 @@ public class DefaultSettings {
 		prop.setProperty(ConfigKeys.analysisHardening, String.valueOf(false));
 		prop.setProperty(ConfigKeys.analysisBayesian, String.valueOf(false));
 		prop.setProperty(ConfigKeys.analysisCriticality, String.valueOf(false));
+		prop.setProperty(ConfigKeys.analysisCentrality, String.valueOf(false));
 		
 		prop.setProperty(ConfigKeys.debugEnabled, String.valueOf(false));
 		prop.setProperty(ConfigKeys.traceEnabled, String.valueOf(false));
